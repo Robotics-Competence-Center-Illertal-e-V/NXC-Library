@@ -7,8 +7,6 @@
  *    Version: 1.0 [12-2024] First stable release
 */
 
-#ifndef ROCCI_IR
-#define ROCCI_IR
 
 /* 
  *    Returns the value of the IR-Seeker.
@@ -41,5 +39,3 @@ int SensorIR(byte port,  byte index)
   }
   return result;                    // returns -1 if I2CBytes failed
 }
-
-#endif
