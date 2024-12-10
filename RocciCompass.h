@@ -7,8 +7,6 @@
  *    Version: 1.0 [12-2024] First stable release
 */
 
-#ifndef ROCCI_COMPASS
-#define ROCCI_COMPASS
 
 /* 
  *    Returns the calculated direction of the compass.
@@ -22,5 +20,3 @@ int CompassDirection(int sensor_value, int offset)
 {
   return (sensor_value - offset + 180 + 360) % 360;
 }
-
-#endif
